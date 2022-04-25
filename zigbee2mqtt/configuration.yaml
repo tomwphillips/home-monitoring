@@ -8,4 +8,4 @@ frontend:
   port: 8080
 availability: true
 advanced:
-  network_key: GENERATE
+  network_key: '!secret network_key'
