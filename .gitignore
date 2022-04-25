@@ -1,0 +1,4 @@
+zigbee2mqtt/database.db
+zigbee2mqtt/log
+zigbee2mqtt/secret.yaml
+zigbee2mqtt/state.json
