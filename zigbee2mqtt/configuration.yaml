@@ -9,3 +9,20 @@ frontend:
 availability: true
 advanced:
   network_key: '!secret network_key'
+devices:
+  '0x00158d0007b6dd8d':
+    friendly_name: living_room/air_sensor
+  '0x00158d0007b6f306':
+    friendly_name: bedroom_1/air_sensor
+  '0x00158d0007df636d':
+    friendly_name: office/air_sensor
+  '0x00158d0007df64c4':
+    friendly_name: bathroom/air_sensor
+  '0x00158d0007bc12a8':
+    friendly_name: bedroom_2/air_sensor
+  '0x00158d0007b6f469':
+    friendly_name: kitchen/air_sensor
+  '0x00158d0007bc16bc':
+    friendly_name: dining_room/air_sensor
+  '0x00158d0007bc1813':
+    friendly_name: garage/air_sensor
