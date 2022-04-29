@@ -21,7 +21,7 @@ services:
     volumes:
       - ./mosquitto/mosquitto.conf:/mosquitto/config/mosquitto.conf
     ports:
-      - 1833:1883
+      - 1883:1883
       - 9001:9001
     command: "mosquitto -c /mosquitto-no-auth.conf"
   home_assistant:
@@ -31,5 +31,5 @@ services:
     volumes:
       - ./home-assistant:/config
       - /etc/localtime:/etc/localtime:ro
-    network_mode: host
-    
+    ports:
+      - 80:8123 
