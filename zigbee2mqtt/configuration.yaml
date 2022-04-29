@@ -1,4 +1,4 @@
-permit_join: false 
+permit_join: false
 mqtt:
   base_topic: zigbee2mqtt
   server: mqtt://mosquitto
@@ -9,6 +9,7 @@ frontend:
 availability: true
 advanced:
   network_key: '!secret network_key'
+homeassistant: true
 devices:
   '0x00158d0007b6dd8d':
     friendly_name: living_room/air_sensor
@@ -26,3 +27,11 @@ devices:
     friendly_name: dining_room/air_sensor
   '0x00158d0007bc1813':
     friendly_name: garage/air_sensor
+  '0x00158d0007df98ec':
+    friendly_name: porch/air_sensor
+  '0x0017880106f555cf':
+    friendly_name: garage/motion_sensor
+  '0x001788010472afc7':
+    friendly_name: garage/light
+  '0x001788010472b007':
+    friendly_name: hallway/entrance_light
