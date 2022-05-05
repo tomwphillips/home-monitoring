@@ -20,5 +20,5 @@ if [ -z "$(docker ps -q -a -f name=$GCLOUD_CONTAINER)" ]; then
 fi
 
 docker run --rm --volumes-from $GCLOUD_CONTAINER \
-    --mount type=bind,source="/home/pi/home-monitoring/backups",target=/backups \
+    --mount type=bind,source="$(pwd)/backups",target=/backups \
     "$GCLOUD_IMAGE" gsutil cp -r "/backups/*" gs://rpi-alpha-backup/
