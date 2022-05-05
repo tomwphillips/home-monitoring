@@ -33,3 +33,12 @@ services:
       - /etc/localtime:/etc/localtime:ro
     ports:
       - 80:8123 
+  influxdb:
+    container_name: influxdb
+    image: influxdb:2.2.0
+    restart: unless-stopped
+    volumes:
+      - ./influxdb:/var/lib/influxdb2
+      - ./backups:/backups
+    ports:
+      - 8086:8086
