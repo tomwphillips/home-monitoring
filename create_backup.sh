@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -l
 
 set -eu
 
@@ -22,3 +22,6 @@ fi
 docker run --rm --volumes-from $GCLOUD_CONTAINER \
     --mount type=bind,source="$(pwd)/backups",target=/backups \
     "$GCLOUD_IMAGE" gsutil cp -r "/backups/*" gs://rpi-alpha-backup/
+
+curl -s "$CRONITOR_BACKUP_URL"
+
