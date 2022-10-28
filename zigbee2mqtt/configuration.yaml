@@ -35,3 +35,18 @@ devices:
     friendly_name: garage/light
   '0x001788010472b007':
     friendly_name: hallway/entrance_light
+  '0x00158d0002a57480':
+    friendly_name: kitchen/wall-light-sink
+  '0x00158d0002a58fca':
+    friendly_name: kitchen/wall-light-fridge
+  '0x00158d000225db92':
+    friendly_name: bathroom/ceiling-light-bath
+  '0x00158d0002a579ad':
+    friendly_name: bathroom/ceiling-light-towel-rail
+  '0x00158d0002a5f8ca':
+    friendly_name: bathroom/ceiling-light-toilet
+  '0x00158d0002a5cbe3':
+    friendly_name: bathroom/ceiling-light-shower
+  '0x001788010873e67f':
+    friendly_name: bathroom/dimmer
+groups: {}
