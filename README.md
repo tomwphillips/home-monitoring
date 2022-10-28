@@ -8,6 +8,8 @@ This data will also be useful for examining the effect of any measures we undert
 Here's how I set it all up.
 I took inspiration from the guide published by [Carbon Co-op](https://carbon.coop/2020/07/a-guide-to-monitoring-your-home-environment/), but made some different choices.
 
+There's also a some home automation using Hive, Hue and Shelly devices.
+
 ## Hardware
 
 You will need:
@@ -58,10 +60,3 @@ network_key: YOUR_SECRET_KEY
 2. Create a bucket called `home_assistant` (Data > Buckets).
 3. Create an API token (Data > API Tokens) with read/write access to the `home_assistant` bucket. TODO: api token in HA secrets
 4. Click Profile (top left in the UI) > Members > About and copy the organisation ID. TODO: HA secret
-
-
-## Choices
-
-* zigbee2mqtt over deConz
-* containers
-* InfluxDB - not a fan, but it's easy
