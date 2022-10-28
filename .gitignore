@@ -1,10 +1,16 @@
-zigbee2mqtt/database.db
+*.db*
+*.log*
+
+.HA_VERSION
+
+influxdb/
+.storage/
+.vscode/
+
 zigbee2mqtt/log
 zigbee2mqtt/secret.yaml
 zigbee2mqtt/state.json
-influxdb/
 zigbee2mqtt/log
 zigbee2mqtt/secret.json
 zigbee2mqtt/state.json
-backup.log
 
