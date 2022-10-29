@@ -14,3 +14,4 @@ zigbee2mqtt/log
 zigbee2mqtt/secret.json
 zigbee2mqtt/state.json
 
+home-assistant/secrets.yaml

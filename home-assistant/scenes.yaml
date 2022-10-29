@@ -1,0 +1,107 @@
+- id: "1666727323930"
+  name: Shower mode
+  entities:
+    light.bathroom_ceiling_light_bath:
+      min_mireds: 150
+      max_mireds: 500
+      effect_list:
+        - blink
+        - breathe
+        - okay
+        - channel_change
+        - finish_effect
+        - stop_effect
+      supported_color_modes:
+        - color_temp
+      color_mode: color_temp
+      brightness: 51
+      color_temp: 370
+      hs_color:
+        - 28.391
+        - 65.659
+      rgb_color:
+        - 255
+        - 166
+        - 87
+      xy_color:
+        - 0.526
+        - 0.387
+      linkquality: 79
+      friendly_name: bathroom/ceiling-light-bath
+      supported_features: 47
+      state: "on"
+    light.bathroom_ceiling_light_shower:
+      min_mireds: 150
+      max_mireds: 500
+      effect_list:
+        - blink
+        - breathe
+        - okay
+        - channel_change
+        - finish_effect
+        - stop_effect
+      supported_color_modes:
+        - color_temp
+      linkquality: 53
+      friendly_name: bathroom/ceiling-light-shower
+      supported_features: 47
+      state: "off"
+    light.bathroom_ceiling_light_toilet:
+      min_mireds: 150
+      max_mireds: 500
+      effect_list:
+        - blink
+        - breathe
+        - okay
+        - channel_change
+        - finish_effect
+        - stop_effect
+      supported_color_modes:
+        - color_temp
+      color_mode: color_temp
+      brightness: 51
+      color_temp: 370
+      hs_color:
+        - 28.391
+        - 65.659
+      rgb_color:
+        - 255
+        - 166
+        - 87
+      xy_color:
+        - 0.526
+        - 0.387
+      linkquality: 53
+      friendly_name: bathroom/ceiling-light-toilet
+      supported_features: 47
+      state: "on"
+    light.bathroom_ceiling_light_towel_rail:
+      min_mireds: 150
+      max_mireds: 500
+      effect_list:
+        - blink
+        - breathe
+        - okay
+        - channel_change
+        - finish_effect
+        - stop_effect
+      supported_color_modes:
+        - color_temp
+      color_mode: color_temp
+      brightness: 51
+      color_temp: 370
+      hs_color:
+        - 28.391
+        - 65.659
+      rgb_color:
+        - 255
+        - 166
+        - 87
+      xy_color:
+        - 0.526
+        - 0.387
+      linkquality: 47
+      friendly_name: bathroom/ceiling-light-towel-rail
+      supported_features: 47
+      state: "on"
+  icon: mdi:shower-head

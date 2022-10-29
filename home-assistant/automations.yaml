@@ -1,0 +1,54 @@
+- id: '1666727797485'
+  alias: Activate shower mode
+  description: ''
+  trigger:
+  - platform: device
+    domain: mqtt
+    device_id: fe4da26ed61d619379fd24d838370376
+    type: action
+    subtype: down-hold
+    discovery_id: 0x001788010873e67f action_down-hold
+  condition: []
+  action:
+  - service: scene.turn_on
+    target:
+      entity_id: scene.kelly_s_shower_mode
+    metadata: {}
+  mode: single
+- id: '1666935512866'
+  alias: Automatic garage Light
+  description: ''
+  use_blueprint:
+    path: homeassistant/motion_light.yaml
+    input:
+      motion_entity: binary_sensor.garage_motion_sensor_occupancy
+      light_target:
+        entity_id: light.garage_light
+- id: '1666936913381'
+  alias: Turn on towel rail
+  description: ''
+  trigger:
+  - platform: time
+    at: 06:30:00
+  condition: []
+  action:
+  - type: turn_on
+    device_id: 55c551dfa582c7dfe4f1eff25a1c06c9
+    entity_id: switch.towel_rail
+    domain: switch
+  mode: single
+- id: '1666936946773'
+  alias: Turn off towel rail
+  description: ''
+  trigger:
+  - platform: time
+    at: '21:00:00'
+  - platform: time
+    at: 00:09:00
+  condition: []
+  action:
+  - type: turn_off
+    device_id: 55c551dfa582c7dfe4f1eff25a1c06c9
+    entity_id: switch.towel_rail
+    domain: switch
+  mode: single
